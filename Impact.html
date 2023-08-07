@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="first.css"> -->
+    <title>Impact</title>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather+Sans:ital,wght@0,300;0,400;1,500&family=Roboto:wght@300&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    .one ul li a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .one li {
+        list-style: none;
+        font-family: sans-serif;
+    }
+
+    .one ul li a {
+        display: flex;
+    }
+
+    .two {
+        display: flex;
+        padding: 0px 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .two :hover {
+        color: black;
+
+
+    }
+
+    .two li a {
+        padding: 3px 14px;
+        line-height: 50px;
+    }
+    .two a{
+        margin: auto 20px;
+    }
+
+    .three {
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        font-size: 9px;
+        justify-content: center;
+        width: 22%;
+        margin: 10px;
+        margin-left: auto;
+        height: 193px;
+        background-color: rgb(28, 107, 255);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+
+    }
+
+    .three:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .three h3 {
+        margin-top: 40px;
+        font-size: large;
+    }
+
+    .four {
+        background-color: rgb(28, 107, 255);
+        color: white;
+        border: 1px solid white;
+        border-radius: 2px;
+
+    }
+
+    .btn {
+        width: 70px;
+        background-color: rgb(28, 107, 255);
+        color: white;
+    }
+
+    .four:hover {
+        color: black;
+    }
+
+    .five {
+        background-color: rgb(28, 107, 255);
+        color: white;
+    }
+
+    .six {
+        border: 2px solid white;
+    }
+
+    .six h2 {
+        color: rgb(28, 107, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .seven {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+
+    .login-btn {
+        margin: 8px;
+
+    }
+
+    .about-us-img img {
+        width: 85%;
+        height: auto;
+        /* background-color: rgba(162, 165, 204, 0.527); */
+        /* box-shadow: 10px 10px 10px rgba(104, 111, 207, 0.527); */
+    }
+
+    .about-us h1 {
+        font-weight: 600;
+    }
+
+    .about-us .span {
+        background-color: rgba(162, 165, 204, 0.527);
+        border-radius: 50px;
+        color: rgb(28, 107, 255);
+        padding: 10px 12px;
+    }
+
+    .about-us {
+        padding: 10px 55px;
+    }
+
+    .about-us p {
+        margin: 30px 5px;
+    }
+
+    .about-us input {
+        background-color: rgb(28, 107, 255);
+        padding: 10px 10px;
+        border: 1px solid rgb(28, 107, 255);
+        border-radius: 20px;
+        color: white;
+        width: 30%;
+    }
+
+    .about-us input:hover {
+        opacity: 0.6;
+    }
+
+    .our-service {
+        width: 100%;
+        background-color: rgb(28, 107, 255);
+        height: 100vh;
+        /* padding-top: 10px; */
+        color: white;
+    }
+
+    .our-service .service {
+        text-align: center;
+        padding-top: 120px;
+
+    }
+
+    .our-service .service h1 {
+        font-weight: 500;
+    }
+
+    .our-service .service span {
+        background-color: white;
+        color: rgb(28, 107, 255);
+        border-radius: 50%;
+        margin: auto 10px;
+        padding: 20px 15px;
+        font-weight: 700;
+    }
+
+    .our-service .service p {
+        margin: 30px;
+        font-size: 16px;
+    }
+
+    .icon-div {
+        text-align: center;
+        /* margin-top: 50px; */
+        /* background-color: aqua; */
+        padding-top: 34px;
+    }
+
+    .icon-div .icon-btn {
+        background-color: white;
+        color: black;
+        border-radius: 50px;
+        margin-bottom: 15px;
+        padding: 10px 40px;
+        border: none;
+    }
+
+    .icon-div .icon-btn:hover {
+        opacity: 0.6;
+    }
+
+    .icon-div i {
+        margin: 10px;
+    }
+    .tes-timonial{
+        text-align: center;
+        margin: 50px 10px ;
+    }
+    .tes-timonial span{
+        background-color: rgba(162, 165, 204, 0.527);
+        border-radius: 50px;
+        color: rgb(28, 107, 255);
+        padding: 15px 12px;
+    }
+    .magna-div{
+        border: 1px solid rgb(238, 225, 225);
+        border-radius: 15px;
+        padding: 20px 25px;
+    }
+     .magna-hover{
+        background-color: rgb(28, 107, 255);
+    }
+    .impact-text h1{
+        font-weight: 900;
+    }
+</style>
+
+<body>
+
+    <nav class="one  navbar navbar-expand-sm navbar-dark bg-primary">
+        <div class="two container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">Impact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Impact about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Service</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- 
+    <div class="container-fluid bg-primary">
+
+        <nav class="one">
+            <ul class="two">
+                <li><a href="">Home</a></li>
+                <li><a href="Impact about.html">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href=""> Teams</a></li>
+                <li><a href="loginimpact.html">contact</a></li>
+            </ul>
+            <p style="color: white; text-align: right;" class="h5" id="time"></p>
+
+        </nav> -->
+
+    </div>
+    <div class="container p-5 mt-5">
+        <div class="row">
+            <div class="impact-text col-sm-6 mt-5">
+                <h1>Impact.</h1>
+                <p>Web Agency It is a long established fact that a reader will be distracted by the readable content of
+                    a page when looking at its layout. The point of using Lorem I</p>
+                <a href="https://www.website.com/sign-in/?source=SC&country=IN" class="btn login-btn ">Login</a>
+            </div>
+            <div class="col-sm-6">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ7-vOITxMhvVtbktx8BQRNxDWhLB3JX6VH_wprtxnzDyg0OhJ"
+                    width="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="about-us-img col-sm-6">
+                <img src="https://themewagon.github.io/Heado/images/img-2.png" alt="">
+            </div>
+            <div class="about-us col-sm-6">
+                <h1>About <span class="span"> Us</span></h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem</p>
+                <input type="button" value="Read more">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class=" container p-5">
+        <div class="row">
+            <div class=" three col-sm-3 text-center">
+                <h3>||</h3>
+                <h3>loram ipsum</h3>
+
+            </div>
+            <div class=" three col-sm-3 text-center">
+                <h3>||</h3>
+                <h3>perstu ipsum</h3>
+
+            </div>
+            <div class="col-sm-3 three text-center">
+                <h3>||</h3>
+                <h3>netoon ipsum</h3>
+
+            </div>
+            <div class="col-sm-3 three text-center">
+                <h3>||</h3>
+                <h3>Resha ipsum</h3>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="our-service container-fluid">
+        <div class="service">
+            <h1><span>Our</span>Services</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+        </div>
+
+        <div class="icon-div container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <i class="fa-solid fa-city fa-2xl "></i>
+                    <h4>Logo Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa-solid fa-layer-group fa-2xl "></i>
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    <input type="button" class="icon-btn" value="Read more">
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa-solid fa-film fa-2xl"></i>
+                    <h4>Banner Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="icon-div container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <i class="fa-solid fa-tv fa-2xl "></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+
+                </div>
+                <div class="col-sm-6">
+                    <i class="fa-solid fa-share-nodes fa-2xl"></i>
+                    <h3>Social Media Work</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="six container p-2 mt-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdYP5GCwx74OKcOpPrUV1xEf_qigUqGZCmwB3UqWKS3IDGWR1j"
+                    width="100%" alt="">
+            </div>
+            <div class="col-sm-6">
+                <h2>232</h2>
+                <p>Happy Clients consequuntur quae diredo para mesta</p>
+                <hr>
+                <h2>521</h2>
+                <p>Projects adipisci atque cum quia aut</p>
+                <hr>
+                <h2>453</h2>
+                <p>Hours Of Support aut commodi quaerat</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="tes-timonial">
+            <h1><span>Tes</span>timonial</h1>
+        </div>
+
+        <div class=" row">
+            <div class="magna-div col-sm-6">
+                <div class="row">
+                    <div class="col-sm6">
+                        <img src="https://themewagon.github.io/Heado/images/img-6.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Magna</h2>
+                        <p>Consectetur  adipiscing</p>
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum</p>
+                </div>
+
+            </div>
+            <div class="magna-div magna-hover col-sm-6">
+                <div class="row">
+                    <div class="col-sm6">
+                        <img src="https://themewagon.github.io/Heado/images/img-6.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Magna</h2>
+                        <p>Consectetur adipiscing</p>
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+
+        <div class=" five container-fluid p-5 mt-5 ">
+            <div class="row p-5">
+                <div class="col-sm-3">
+                    <h4>Details</h4>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
+                        valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>Our social</h4>
+                    <li>Phone no <i class="fa-solid fa-phone"></i></li>
+                    <li>Instagram <i class="fa-brands fa-instagram fa-sm"></i></li>
+                    <li>Facebook <i class="fa-brands fa-facebook-f"></i></li>
+                    <li>Twitter <i class="fa-brands fa-twitter"></i></li>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>contact</h4>
+                    <li>9315941808</li>
+                    <li>Vip182.</li>
+                    <li>Harvi dhingra</li>
+                    <li>harvi1882</li>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>About</h4>
+                    <p>This web site for fair use only we want to make one of the world best platform or everone
+                        on social media , hii i'm harvi dhingra ceo of this company private limetd Impact.
+                    </p>
+                </div>
+
+            </div>
+            <h4 style="text-align: right;">by harvi @<span id="year"></span></h4>
+        </div>
+        <script>
+            var today = new Date();
+            document.getElementById('year').innerHTML = today.getFullYear();
+        </script>
+
+    </footer>
+
+</body>
+
+</html>
